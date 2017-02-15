@@ -1,3 +1,5 @@
+#this is a program to beat the traditional 'Jumble' newspaper game.
+#the user enters the scrambled word, program outputs a word that makes sense(is a part of the english dictionary)
 import random
 from nltk.corpus import wordnet
 while True:

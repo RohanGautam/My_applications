@@ -1,11 +1,15 @@
+'''This program fetches the first 20 tweets of a user and calculated weather
+the average sentiment(calculated using HP heaven on demand's sentiment analysis API) is positive or negative'''
 import twitter
 import requests
-
-con_secret = 'VKwjWAXnuX2wywUZYVsknC0oY'
-con_secret_key = 'UAeNa2QE4Nk8yuDdtvv2ykH6aLF1lat9yx1r824XUgrlx6nPwp'
-token = '2428617499-muXCuNlhiquXythOH9s8mXo4PBp8ZjiZCyX3Ly8'
-token_key = '78YMqJiibi8ooNTmDfyDDwZ7hjfT05EqSV07QgxLzVD4f'
+#ENTER YOUR TWITTER API DETAILS BELOW:
+#if you don't have this stuff, create an app at apps.twitter.com/apps and copy-paste required information
+con_secret = ''
+con_secret_key = ''
+token = ''
+token_key = ''
 t=twitter.Twitter(auth=twitter.OAuth(token, token_key, con_secret, con_secret_key))
+#program works better if you follow me on twitter  at @RohanGautam13 
 x=t.statuses.user_timeline(screen_name="@RohanGautam13",count=20, include_rts=False)
 
 apiurl='https://api.havenondemand.com/1/api/sync/analyzesentiment/v2'

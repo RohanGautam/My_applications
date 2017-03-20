@@ -1,4 +1,4 @@
-'''This program fetches the first 20 tweets of a user and calculated weather
+'''This program fetches the first 20 tweets of a user and calculates weather
 the average sentiment(calculated using HP heaven on demand's sentiment analysis API) is positive or negative'''
 import twitter
 import requests
